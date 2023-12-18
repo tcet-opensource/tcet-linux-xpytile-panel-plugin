@@ -20,14 +20,13 @@
 #ifndef __SAMPLE_DIALOGS_H__
 #define __SAMPLE_DIALOGS_H__
 
+#include "libxfce4panel/xfce-panel-plugin.h"
+#include "sample.h"
 G_BEGIN_DECLS
 
-void
-sample_configure    (XfcePanelPlugin *plugin,
-                     SamplePlugin    *sample);
+void sample_configure(XfcePanelPlugin* plugin, SamplePlugin* sample);
 
-void
-sample_about        (XfcePanelPlugin *plugin);
+void sample_about(XfcePanelPlugin* plugin);
 
 G_END_DECLS
 

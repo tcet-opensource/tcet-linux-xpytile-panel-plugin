@@ -5,7 +5,10 @@
 *.tar.*
 .deps
 .libs
+.cache
+compile_commands.json
 ChangeLog
+configure~
 INSTALL
 Makefile
 Makefile.in
