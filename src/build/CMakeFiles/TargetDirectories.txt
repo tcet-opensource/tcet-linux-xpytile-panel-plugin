@@ -1,0 +1,3 @@
+/home/rj/tcet-linux-xpytile-panel-plugin/src/build/CMakeFiles/hello-plugin.dir
+/home/rj/tcet-linux-xpytile-panel-plugin/src/build/CMakeFiles/edit_cache.dir
+/home/rj/tcet-linux-xpytile-panel-plugin/src/build/CMakeFiles/rebuild_cache.dir

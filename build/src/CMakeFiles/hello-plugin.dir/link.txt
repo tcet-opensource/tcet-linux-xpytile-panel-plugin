@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wall -Wextra -O3 -DNDEBUG -shared  -o libhello-plugin.so "CMakeFiles/hello-plugin.dir/build/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.o" "CMakeFiles/hello-plugin.dir/sample-dialogs.c.o" "CMakeFiles/hello-plugin.dir/sample.c.o" 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -Wextra -std=c++11 -shared  -o libhello-plugin.so "CMakeFiles/hello-plugin.dir/hello-plugin.o" "CMakeFiles/hello-plugin.dir/register-plugin.o" 
