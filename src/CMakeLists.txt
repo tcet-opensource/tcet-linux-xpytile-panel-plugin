@@ -1,6 +1,5 @@
 set(HELLO-PLUGIN_FLAGS "-Wall -Wextra")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${HELLO-PLUGIN_FLAGS}")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${HELLO-PLUGIN_FLAGS} -std=c++11")
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTK3 REQUIRED gtk+-3.0>=3.12)
@@ -25,5 +24,5 @@ add_definitions(
   -DPACKAGE_LOCALE_DIR="${CMAKE_INSTALL_FULL_LOCALEDIR}")
 
 add_library(hello-plugin MODULE
-	hello-plugin.cpp
+	hello-plugin.c
         register-plugin.c)

@@ -17,6 +17,6 @@
 
 #include <libxfce4panel/xfce-panel-plugin.h>
 
-extern void hello_construct(XfcePanelPlugin* plugin);
+extern void sample_construct(XfcePanelPlugin* plugin);
 
-XFCE_PANEL_PLUGIN_REGISTER(hello_construct);
+XFCE_PANEL_PLUGIN_REGISTER(sample_construct);
