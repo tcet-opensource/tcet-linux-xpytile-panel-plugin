@@ -1,13 +1,37 @@
-# TCET Linux Xpytile panel plugin
+[![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://gitlab.xfce.org/panel-plugins/xfce4-sample-plugin/-/blob/master/COPYING)
 
-Xpytile plugin for XFCE panel
+# xfce4-sample-plugin
 
-## Installation instruction
+Xfce4-sample-plugin is a sample plugin for the Xfce panel, version 4.14 or higher.
+It demonstrates the basic usage of the plugin framework and provides a
+good layout for initial imports.
 
-```bash
-cd tcet-linux-xpytile-panel-plugin
-make builddeps
-make compile
-sudo make install
-```
-to Uninstall just run `sudo make uninstall`
+Note that there is as well an experimental [python sample plugin](https://gitlab.xfce.org/itsManjeet/sample-python-plugin), in case you prefer to write a plugin in python.
+
+----
+
+### Homepage
+
+[Xfce4-sample-plugin documentation](https://docs.xfce.org/panel-plugins/xfce4-sample-plugin)
+
+### Changelog
+
+See [NEWS](https://gitlab.xfce.org/panel-plugins/xfce4-sample-plugin/-/blob/master/NEWS) for details on changes and fixes made in the current release.
+
+### Source Code Repository
+
+[Xfce4-sample-plugin source code](https://gitlab.xfce.org/panel-plugins/xfce4-sample-plugin)
+
+### Installation
+
+From source code repository: 
+
+    % cd xfce4-sample-plugin
+    % ./autogen.sh
+    % make
+    % make install
+
+### Reporting Bugs
+
+Visit the [reporting bugs](https://docs.xfce.org/panel-plugins/xfce4-sample-plugin/bugs) page to view currently open bug reports and instructions on reporting new bugs or submitting bugfixes.
+

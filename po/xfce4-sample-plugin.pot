@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the xfce4-sample-plugin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-sample-plugin 0.0.4git-3e0fa0f\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/panel-plugins/xfce4-sample-"
+"plugin\n"
+"POT-Creation-Date: 2023-12-19 21:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. some sample widgets
+#: panel-plugin/sample.c:161
+msgid "Sample"
+msgstr ""
+
+#: panel-plugin/sample.c:165
+msgid "Plugin"
+msgstr ""
+
+#: panel-plugin/sample-dialogs.c:51
+#, c-format
+msgid "Unable to open the following url: %s"
+msgstr ""
+
+#. create the dialog
+#: panel-plugin/sample-dialogs.c:81 panel-plugin/sample.desktop.in:5
+msgid "Sample Plugin"
+msgstr ""
+
+#: panel-plugin/sample-dialogs.c:124
+msgid "This is a sample plugin"
+msgstr ""
+
+#: panel-plugin/sample.desktop.in:6
+msgid "Sample plugin for the Xfce panel"
+msgstr ""
