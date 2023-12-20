@@ -120,7 +120,7 @@
 #define PACKAGE_NAME "xfce4-sample-plugin"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "xfce4-sample-plugin 0.0.4git-3e0fa0f"
+#define PACKAGE_STRING "xfce4-sample-plugin 0.0.4git-d87bc3f"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "xfce4-sample-plugin"
@@ -129,7 +129,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.0.4git-3e0fa0f"
+#define PACKAGE_VERSION "0.0.4git-d87bc3f"
 
 /* Define to 1 if all of the C90 standard headers exist (not just the ones
    required in a freestanding environment). This macro is provided for
@@ -137,7 +137,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.0.4git-3e0fa0f"
+#define VERSION "0.0.4git-d87bc3f"
 
 /* Define to 1 if the X Window System is missing or not being used. */
 /* #undef X_DISPLAY_MISSING */
