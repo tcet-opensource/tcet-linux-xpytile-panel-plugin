@@ -23,6 +23,6 @@ add_definitions(
   -DGETTEXT_PACKAGE="xfce4-hello-plugin"
   -DPACKAGE_LOCALE_DIR="${CMAKE_INSTALL_FULL_LOCALEDIR}")
 
-add_library(hello-plugin MODULE
-	hello-plugin.c
-        register-plugin.c)
+file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS "*.c")
+
+add_library(hello-plugin MODULE ${MY_SOURCES})
