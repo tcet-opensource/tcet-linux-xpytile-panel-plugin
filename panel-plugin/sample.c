@@ -1,4 +1,4 @@
-
+	
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -131,16 +131,16 @@ static void pop(SamplePlugin* sample){
   
   
   
-  gscreen = gdk_display_get_default_screen(gdk_display_get_default());
-  menu = gtk_menu_new ();
-  gtk_menu_set_screen(GTK_MENU(menu), gscreen);
-  gtk_widget_show_all (menu);
+ //# gscreen = gdk_display_get_default_screen(gdk_display_get_default());
+  //menu = gtk_menu_new ();
+ // gtk_menu_set_screen(GTK_MENU(menu), gscreen);
+ // gtk_widget_show_all (menu);
 
-  mi = gtk_menu_item_new_with_mnemonic ("_Settings...");
-;
-   gtk_widget_show_all (mi);
+  //mi = gtk_menu_item_new_with_mnemonic ("_Settings...");
 
-
+   //gtk_widget_show_all (mi);
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+	gtk_window_present(window);
 }
 
 static SamplePlugin *
