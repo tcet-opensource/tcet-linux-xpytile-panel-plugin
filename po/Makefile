@@ -10,7 +10,7 @@
 GETTEXT_MACRO_VERSION = 0.19
 
 PACKAGE = xfce4-sample-plugin
-VERSION = 0.0.4git-3e0fa0f
+VERSION = 0.0.4git-ffa5270
 PACKAGE_BUGREPORT = https://gitlab.xfce.org/panel-plugins/xfce4-sample-plugin
 
 SED = /usr/bin/sed
@@ -34,12 +34,12 @@ INSTALL_DATA = ${INSTALL} -m 644
 # We use $(mkdir_p).
 # In automake <= 1.9.x, $(mkdir_p) is defined either as "mkdir -p --" or as
 # "$(mkinstalldirs)" or as "$(install_sh) -d". For these automake versions,
-# ${SHELL} /home/av/xfce4-sample-plugin/install-sh does not start with $(SHELL), so we add it.
+# ${SHELL} /mnt/av/tcet-linux-xpytile-panel-plugin/install-sh does not start with $(SHELL), so we add it.
 # In automake >= 1.10, $(MKDIR_P) is derived from ${MKDIR_P}, which is defined
 # either as "/path/to/mkdir -p" or ".../install-sh -c -d". For these automake
 # versions, $(mkinstalldirs) and $(install_sh) are unused.
-mkinstalldirs = $(SHELL) ${SHELL} /home/av/xfce4-sample-plugin/install-sh -d
-install_sh = $(SHELL) ${SHELL} /home/av/xfce4-sample-plugin/install-sh
+mkinstalldirs = $(SHELL) ${SHELL} /mnt/av/tcet-linux-xpytile-panel-plugin/install-sh -d
+install_sh = $(SHELL) ${SHELL} /mnt/av/tcet-linux-xpytile-panel-plugin/install-sh
 MKDIR_P = /usr/bin/mkdir -p
 mkdir_p = $(MKDIR_P)
 
@@ -276,7 +276,7 @@ $(DOMAIN).pot-update: $(POTFILES) $(srcdir)/POTFILES.in remove-potcdate.sed
 	      --files-from=$(srcdir)/POTFILES.in \
 	      --copyright-holder='$(COPYRIGHT_HOLDER)' \
 	      --package-name="$${package_prefix}xfce4-sample-plugin" \
-	      --package-version='0.0.4git-3e0fa0f' \
+	      --package-version='0.0.4git-ffa5270' \
 	      --msgid-bugs-address="$$msgid_bugs_address" \
 	    ;; \
 	esac

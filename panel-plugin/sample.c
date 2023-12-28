@@ -21,14 +21,6 @@
 /* prototypes */
 static void sample_construct(XfcePanelPlugin *plugin);
 
-static void poppopop(SamplePlugin *sample) {
-  GtkWidget *box;
-  GtkWidget *label;
-  GtkWidget *menu;
-
-  menu = gtk_menu_item_new_with_label("hellooooooo");
-  gtk_widget_show(menu);
-}
 
 /* register the plugin */
 XFCE_PANEL_PLUGIN_REGISTER(sample_construct);
@@ -113,31 +105,32 @@ static void power_manager_button_toggle_presentation_mode(GtkMenuItem *mi,
 static void pop(SamplePlugin *sample) {
   GtkWidget *window;
   GtkWidget *vbox;
+  GtkWidget *hbox;
   GtkWidget *menuBar;
   GtkWidget *menuItem;
   GtkWidget *submenu;
-  GtkWidget *switchWidget;
-
+  
+  GtkWidget* switchWid;
+  GtkWidget* grid;
+  GtkWidget* label;
+  int window_width;
+  int window_height;
   window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
   gtk_window_set_title(GTK_WINDOW(window), "Simple menu with switch");
 
-  vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
-  gtk_container_add(GTK_CONTAINER(window), vbox);
+  grid  = gtk_grid_new();
+  switchWid = gtk_switch_new();
+  label = gtk_label_new("Xpytile on/off ");
+  
+  gtk_grid_attach(grid,label,0,0,1,1);
+  gtk_grid_attach(grid,switchWid,5,0,5,5);
 
-  menuBar = gtk_menu_bar_new();
-  menuItem = gtk_menu_item_new_with_label("Options");
-  submenu = gtk_menu_new();
-  switchWidget = gtk_switch_new();
-
-  gtk_menu_shell_append(GTK_MENU_SHELL(submenu), switchWidget);
-  gtk_menu_item_set_submenu(GTK_MENU_ITEM(menuItem), submenu);
-  gtk_menu_shell_append(GTK_MENU_SHELL(menuBar), menuItem);
-
-  gtk_box_pack_start(GTK_BOX(vbox), menuBar, FALSE, FALSE, 0);
+  gtk_container_add(GTK_WINDOW(window),grid);
 
   g_signal_connect(G_OBJECT(window), "destroy", G_CALLBACK(gtk_main_quit),
                    NULL);
-
+  gtk_window_get_size (window, &window_width, &window_height);
+  gtk_window_move (window, gdk_screen_width () - window_width-10, gdk_screen_height ()- 55);
   gtk_widget_show_all(window);
 }
 
